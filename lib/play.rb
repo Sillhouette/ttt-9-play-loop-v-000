@@ -50,7 +50,6 @@ def play(board)
   end
 end
 
-play(board)
 #def play(board)
 #  counter = 0
 #  loop do
