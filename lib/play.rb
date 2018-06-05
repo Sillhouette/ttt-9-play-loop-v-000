@@ -37,13 +37,24 @@ end
 
 # Define your play method below
 # Define your play method below
-
 def play(board)
-  counter = 0
-  loop do
-    until counter == 9
+  current_turn = 0
+  until current_turn == 9
+    if current_turn % 2 == 0
+      player = "X"
+    else
+      player = "O"
+    end
     turn(board)
-    counter += 1
+    current_turn += 1
   end
 end
-end
+#def play(board)
+#  counter = 0
+#  loop do
+#    until counter == 9
+#    turn(board)
+#    counter += 1
+#  end
+#end
+#end
